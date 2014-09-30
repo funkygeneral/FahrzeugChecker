@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">DER FAHRZEUG CHECKER</string>
+    <string name="add_fahrzeug">FAHRZEUG HINZUFÜGEN</string>
+    <string name="get_fahrzeug">FAHRZEUGE DURCHSUCHEN</string>
+    <color name="background_color">#CEE2E5</color>
+    <color name="text_color">#A2B2B3</color>
+    <color name="divider_color">#B8C9CB</color>
+    <color name="button_color">#475AA8</color>
+
+</resources>

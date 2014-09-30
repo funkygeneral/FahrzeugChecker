@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TableRow
+        android:id="@+id/reifenChecker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" >
+
+        <RadioButton
+            android:id="@+id/silberRadioButton"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/stern_silber_icon"
+            android:button="@android:color/transparent"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/goldRadioButton"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/stern_gold_icon"
+            android:button="@android:color/transparent" />
+
+        <RadioButton
+            android:id="@+id/bronzeRadioButton"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/stern_bronze_icon"
+            android:button="@android:color/transparent" />
+
+        <RadioButton
+            android:id="@+id/pinkRadioButton"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/stern_pink_icon"
+            android:button="@android:color/transparent" />
+    </TableRow>
+
+</RelativeLayout>

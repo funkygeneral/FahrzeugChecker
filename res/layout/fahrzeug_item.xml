@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/fahrzeugImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/einrad"
+        android:adjustViewBounds="true"
+        android:maxWidth="64dp"
+        android:maxHeight="64dp"
+        android:padding="16dp"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/reifenIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="left"
+        android:layout_toRightOf="@id/fahrzeugImage"
+        android:paddingLeft="64dp"
+        android:paddingTop="16dp"
+        android:text="1"
+        android:textColor="@color/button_color"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/reifenDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_toRightOf="@id/fahrzeugImage"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:gravity="right"
+        android:text="REIFEN"
+        android:textColor="@color/text_color"
+        android:textSize="12sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/farbeIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="left"
+        android:layout_toRightOf="@id/fahrzeugImage"
+        android:paddingLeft="160dp"
+        android:paddingTop="16dp"
+        android:text="KEINE"
+        android:textColor="@color/button_color"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/farbeDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_toRightOf="@id/fahrzeugImage"
+        android:paddingLeft="112dp"
+        android:paddingTop="16dp"
+        android:gravity="right"
+        android:text="FARBE"
+        android:textColor="@color/text_color"
+        android:textSize="12sp"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>

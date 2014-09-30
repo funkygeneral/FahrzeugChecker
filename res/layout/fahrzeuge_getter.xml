@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color" >
+
+    <TextView
+        android:id="@+id/reifenIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="left"
+        android:paddingLeft="96dp"
+        android:paddingTop="16dp"
+        android:text="ALLE"
+        android:textColor="@color/button_color"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <View
+        android:id="@+id/reifenDivider1"
+        android:layout_width="96dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/reifenIndicator"
+        android:layout_marginBottom="16dp"
+        android:background="@color/divider_color" />
+
+    <View
+        android:id="@+id/reifenDivider2"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/reifenIndicator"
+        android:layout_toRightOf="@id/reifenDivider1"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/reifenDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/reifenIndicator"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@id/reifenDivider2"
+        android:gravity="right"
+        android:text="REIFEN"
+        android:textColor="@color/text_color"
+        android:textSize="12sp"
+        android:textStyle="bold|italic" />
+
+    <CheckBox
+        android:id="@+id/editReifenButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/reifenDivider1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/yes_icon"
+        android:button="@android:color/transparent" />
+
+    <RelativeLayout
+        android:id="@+id/reifenContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reifenDivider1"
+        android:layout_marginBottom="16dp"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical" />
+
+    <TextView
+        android:id="@+id/extrasIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reifenContainer"
+        android:layout_gravity="left"
+        android:paddingLeft="96dp"
+        android:paddingTop="16dp"
+        android:text="KEINE"
+        android:textColor="@color/button_color"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <View
+        android:id="@+id/extrasDivider1"
+        android:layout_width="96dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/extrasIndicator"
+        android:layout_marginBottom="16dp"
+        android:background="@color/divider_color" />
+
+    <View
+        android:id="@+id/extrasDivider2"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/extrasIndicator"
+        android:layout_toRightOf="@id/reifenDivider1"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/extrasDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/extrasIndicator"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@id/extrasDivider2"
+        android:gravity="right"
+        android:text="EXTRAS"
+        android:textColor="@color/text_color"
+        android:textSize="12sp"
+        android:textStyle="bold|italic" />
+
+    <CheckBox
+        android:id="@+id/editExtrasButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/extrasDivider1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/yes_icon"
+        android:button="@android:color/transparent" />
+
+    <RelativeLayout
+        android:id="@+id/extrasContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/extrasDivider1"
+        android:layout_marginBottom="16dp"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical" />
+
+    <Button
+        android:id="@+id/getButton"
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:layout_below="@id/extrasContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/button"
+        android:text="DURCHSUCHEN"
+        android:textColor="@color/background_color"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <ListView
+        android:id="@+id/fahrzeugListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/getButton"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

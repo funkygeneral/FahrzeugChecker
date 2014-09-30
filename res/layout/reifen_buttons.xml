@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TableRow
+        android:id="@+id/reifenChecker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" >
+
+        <RadioButton
+            android:id="@+id/reifenRadioButton1"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/reifen_1_icon"
+            android:button="@android:color/transparent"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/reifenRadioButton2"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/reifen_2_icon"
+            android:button="@android:color/transparent" />
+
+        <RadioButton
+            android:id="@+id/reifenRadioButton3"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/reifen_3_icon"
+            android:button="@android:color/transparent" />
+
+        <RadioButton
+            android:id="@+id/reifenRadioButton4"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/reifen_4_icon"
+            android:button="@android:color/transparent" />
+    </TableRow>
+
+</RelativeLayout>

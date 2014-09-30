@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/farbeIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="left"
+        android:paddingLeft="96dp"
+        android:paddingTop="16dp"
+        android:text="SILBER"
+        android:textColor="@color/button_color"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <View
+        android:id="@+id/farbeDivider1"
+        android:layout_width="96dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/farbeIndicator"
+        android:layout_marginBottom="16dp"
+        android:background="@color/divider_color" />
+
+    <View
+        android:id="@+id/farbeDivider2"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/farbeIndicator"
+        android:layout_toRightOf="@id/farbeDivider1"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/farbeDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/farbeIndicator"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@id/farbeDivider2"
+        android:gravity="right"
+        android:text="FARBE"
+        android:textColor="@color/text_color"
+        android:textSize="12sp"
+        android:textStyle="bold|italic" />
+
+    <TableRow
+        android:id="@+id/reifenChecker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/farbeDivider1"
+        android:layout_centerHorizontal="true" >
+
+        <RadioButton
+            android:id="@+id/silberRadioButton"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/stern_silber_icon"
+            android:button="@android:color/transparent"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/goldRadioButton"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/stern_gold_icon"
+            android:button="@android:color/transparent" />
+
+        <RadioButton
+            android:id="@+id/bronzeRadioButton"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/stern_bronze_icon"
+            android:button="@android:color/transparent" />
+
+        <RadioButton
+            android:id="@+id/pinkRadioButton"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/stern_pink_icon"
+            android:button="@android:color/transparent" />
+    </TableRow>
+
+</RelativeLayout>

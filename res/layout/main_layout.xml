@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color" >
+
+    <ImageView
+        android:id="@+id/logoView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/logo" />
+
+    <Button
+        android:id="@+id/getButton"
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/button"
+        android:text="FAHRZEUGE DURCHSUCHEN"
+        android:textColor="@color/background_color"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+    
+    <Button
+        android:id="@+id/setButton"
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:layout_above="@id/getButton"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/button"
+        android:text="FAHRZEUG HINZUFÜGEN"
+        android:textColor="@color/background_color"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>
